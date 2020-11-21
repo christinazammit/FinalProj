@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/add_hiking_fragment"
-        android:name="sheridan.zammichr.prog_practice.ui.add_workouts.AddHikingFragment"
+        android:name="sheridan.zammichr.prog_practice.ui.input.AddHikingFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/add_hiking_fragment" >
         <action

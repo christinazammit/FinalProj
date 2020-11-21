@@ -1,4 +1,4 @@
-package sheridan.zammichr.prog_practice.ui.add_workouts
+package sheridan.zammichr.prog_practice.ui.input
 
 import android.app.Application
 import androidx.lifecycle.*

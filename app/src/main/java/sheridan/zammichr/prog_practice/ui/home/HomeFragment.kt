@@ -8,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import sheridan.zammichr.prog_practice.databinding.FragmentHomeBinding
+import sheridan.zammichr.prog_practice.databinding.HomeFragmentBinding
 
 class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: HomeFragmentBinding
     private val homeViewModel: HomeViewModel by viewModels()
 
     override fun onCreateView(
@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = HomeFragmentBinding.inflate(inflater, container, false)
 
         binding.hikingBtn.setOnClickListener{ showHikingInfo() }
         binding.bikingBtn.setOnClickListener{ showBikingInfo() }
