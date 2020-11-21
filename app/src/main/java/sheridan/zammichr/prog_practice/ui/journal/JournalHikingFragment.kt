@@ -11,8 +11,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import sheridan.zammichr.prog_practice.database.WorkoutHiking
 import sheridan.zammichr.prog_practice.databinding.FragmentJournalHikingBinding
-import sheridan.zammichr.prog_practice.ui.journal1.JournalHikingRecyclerViewAdapter
-import sheridan.zammichr.prog_practice.ui.journal1.JournalHikingViewModel
+import sheridan.zammichr.prog_practice.ui.journal.JournalHikingRecyclerViewAdapter
+import sheridan.zammichr.prog_practice.ui.journal.JournalHikingViewModel
 
 class JournalHikingFragment : Fragment() {
 

@@ -41,7 +41,6 @@
     <string name="_8_00am">8:00AM</string>
     <string name="Biking">Biking</string>
     <string name="Swimming">Swimming</string>
-    <string name="hiking_journal">Hiking Journal</string>
     <string name="biking_journal">Biking Journal</string>
     <string name="swimming_journal">Swimming Journal</string>
     <string name="open">open</string>
@@ -50,5 +49,9 @@
     <string name="workout_journals">Workout Journals</string>
     <string name="workout_added">Workout Added:</string>
     <string name="sunday_hike">Sunday Hike</string>
+    <string name="add_a_hiking_workout">Add a Hiking Workout</string>
+    <string name="hiking_journal">Hiking Journal</string>
+    <string name="about">About</string>
+    <string name="author">Christina Zammit, Sheridan College, 2020</string>
 
 </resources>
