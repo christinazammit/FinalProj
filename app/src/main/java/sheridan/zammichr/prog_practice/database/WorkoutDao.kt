@@ -9,8 +9,8 @@ interface WorkoutDaoHiking {
     @Insert
     suspend fun insert(hiking: WorkoutHiking): Long
 
-    @Query("SELECT * FROM workoutHiking WHERE id=:id")
-    suspend fun get(id: Long): WorkoutHiking
+    @Query("SELECT * FROM workoutHiking WHERE id=:key")
+    fun get(key: Long): LiveData<WorkoutHiking>
 
     @Query("SELECT * FROM workoutHiking")
     fun getAll(): LiveData<List<WorkoutHiking>>
@@ -20,6 +20,9 @@ interface WorkoutDaoHiking {
 
     @Update
     suspend fun update(hiking: WorkoutHiking)
+
+    @Query("DELETE FROM workoutHiking WHERE id=:key")
+    suspend fun delete(key: Long)
 
     @Query("DELETE FROM workoutHiking")
     suspend fun deleteAll()

@@ -12,14 +12,25 @@
         tools:layout="@layout/home_fragment" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/add_hiking_fragment"
         android:name="sheridan.zammichr.prog_practice.ui.add_workouts.AddHikingFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/add_hiking_fragment" />
+        tools:layout="@layout/add_hiking_fragment" >
+        <action
+            android:id="@+id/action_input_to_output"
+            app:destination="@id/outputFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="sheridan.zammichr.prog_practice.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/outputFragment"
+        android:name="sheridan.zammichr.prog_practice.ui.output.OutputFragment"
+        android:label="OutputFragment" />
+    <argument
+        android:name="hikingId"
+        app:argType="long" />
 </navigation>

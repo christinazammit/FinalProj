@@ -14,7 +14,7 @@ import sheridan.zammichr.prog_practice.R
 import sheridan.zammichr.prog_practice.database.WorkoutHiking
 import sheridan.zammichr.prog_practice.databinding.AddHikingFragmentBinding
 
-class AddWorkoutHikingFragment : Fragment() {
+class AddHikingFragment : Fragment() {
 
     private lateinit var binding: AddHikingFragmentBinding
 
@@ -42,8 +42,8 @@ class AddWorkoutHikingFragment : Fragment() {
         viewModel.saveHiking(WorkoutHiking(0, name, date, time, duration, distance))
     }
 
-    private fun showOutput(workoutId: Long) {
-        val action = AddHikingFragmentDirections.actionHikingToJournal(workoutId)
+    private fun showOutput(hikingId: Long) {
+        val action = AddHikingFragmentDirections.actionHikingToJournal(hikingId)
         findNavController().navigate(action)
     }
 
