@@ -22,24 +22,36 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="sheridan.zammichr.prog_practice.ui.journal.JournalHikingFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
         android:id="@+id/outputFragment"
         android:name="sheridan.zammichr.prog_practice.ui.output.OutputFragment"
         android:label="OutputFragment">
         <argument
             android:name="hikingId"
             app:argType="long" />
+        <action
+            android:id="@+id/action_output_to_confirmation"
+            app:destination="@id/confirmationDialog" />
     </fragment>
     <fragment
         android:id="@+id/journalHikingFragment"
-        android:name="sheridan.zammichr.prog_practice.ui.journal1.JournalHikingFragment"
+        android:name="sheridan.zammichr.prog_practice.ui.journal.JournalHikingFragment"
         android:label="JournalHikingFragment" >
         <action
             android:id="@+id/action_journal_to_output"
             app:destination="@id/outputFragment" />
+        <action
+            android:id="@+id/action_journal_to_confirmation"
+            app:destination="@id/confirmationDialog" />
     </fragment>
+    <dialog
+        android:id="@+id/confirmationDialog"
+        android:name="sheridan.zammichr.prog_practice.ui.dialogs.ConfirmationDialog"
+        android:label="ConfirmationDialog">
+    <argument
+        android:name="message"
+        app:argType="string" />
+    <argument
+        android:name="requestCode"
+        app:argType="integer"/>
+    </dialog>
 </navigation>
