@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fitnessTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="@string/fitness_tips"
+                android:textColor="#000000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tip_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="@string/tips_description"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/hiking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onHikingBtnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/hiking" />
+
+            <ImageButton
+                android:id="@+id/biking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onBikingBtnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/biking" />
+
+            <ImageButton
+                android:id="@+id/rope_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onRopeBtnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/jump_rope" />
+
+            <ImageButton
+                android:id="@+id/swimming_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onSwimmingBtnClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/swimming" />
+
+            <ImageButton
+                android:id="@+id/stairs_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onStairsBtnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/stairs" />
+
+            <ImageButton
+                android:id="@+id/weight_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="270dp"
+                android:onClick="onWeightBtnClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/weights" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
