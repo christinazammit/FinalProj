@@ -1,6 +1,9 @@
 package sheridan.zammichr.prog_practice.database
 
 import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 
 @Database(entities = WorkoutHiking::class, version = 1)
 

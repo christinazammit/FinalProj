@@ -1,6 +1,7 @@
 package sheridan.zammichr.prog_practice.database
 
 import androidx.lifecycle.LiveData
+import androidx.room.*
 
 @Dao
 interface WorkoutDaoHiking {
