@@ -53,5 +53,6 @@
     <string name="hiking_journal">Hiking Journal</string>
     <string name="about">About</string>
     <string name="author">Christina Zammit, Sheridan College, 2020</string>
+    <string name="delete">Delete</string>
 
 </resources>
