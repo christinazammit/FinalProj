@@ -1,9 +1,7 @@
 package sheridan.zammichr.prog_practice.ui.journal
 
 import android.app.Application
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 import sheridan.zammichr.prog_practice.database.WorkoutDaoHiking
 import sheridan.zammichr.prog_practice.database.WorkoutDatabase

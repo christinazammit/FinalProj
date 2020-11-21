@@ -39,7 +39,7 @@ class AddHikingFragment : Fragment() {
     }
 
     private fun showOutput(hikingId: Long) {
-        val action = AddHikingFragmentDirections.actionHikingToJournal(hikingId)
+        val action = AddHikingFragmentDirections.actionInputToOutput(hikingId)
         findNavController().navigate(action)
     }
 
